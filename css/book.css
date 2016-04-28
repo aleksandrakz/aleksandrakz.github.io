@@ -24,7 +24,9 @@ iframe {
   border-left: #c00 2px dotted;
   border-bottom: #c00 4px dotted;
 
-  
+
   margin-top: 20px;
   margin-bottom: 30px;
+  width: 900px;
+    height: 2000px;
 }
