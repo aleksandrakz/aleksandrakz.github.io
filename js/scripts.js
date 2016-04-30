@@ -1,20 +1,3 @@
-/**
- * scripts.js
- *
- * David J. Malan
- * malan@harvard.edu
- *
- * Global JavaScript.
- */
-
-// Google Map
-var map;
-
-// markers for map
-var markers = [];
-
-// info window
-var info = new google.maps.InfoWindow();
 
 // execute when the DOM is fully loaded
 $(function() {
