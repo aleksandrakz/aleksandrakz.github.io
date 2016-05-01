@@ -1,7 +1,7 @@
 
  * Adds marker for place to map.
  */
-function addMarker(place)
+function ()
 {
    $("#show").click(function(){
        $("#pageframe").hide();
