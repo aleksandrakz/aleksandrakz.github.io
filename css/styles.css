@@ -1,9 +1,158 @@
-/**
- * styles.css
- *
- * Computer Science 50
- * Problem Set 8
- *
- * Global CSS.
- */
+/*this is the magic stuff*/
 
+h1 { 
+   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+   font-weight: 300;
+}
+
+
+#home {
+  float: right;
+  margin-right: 25px;
+}
+#map {
+  float: right;
+  margin-right: 25px;
+}
+
+aside{
+   background: #16ABBA; 
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+   color:white;
+}
+
+button{
+  width:50px; 
+  height:50px; 
+   background: #16ABBA; 
+  border: 0;
+  background-size: 100%; /* To fill the dimensions of container (button), or */
+  /* to specify dimensions explicitly */
+}
+
+.left {
+  float: right;
+}
+
+.right {
+  float: right;
+}
+
+form{
+  width:500px;
+  margin:0 auto;
+}
+.search { 
+  padding:6px 15px 6px 30px;
+  margin:10px; 
+  background: url('./images/search.png') no-repeat 8px 6px; 
+  float:center;
+  margin-left: 20px;
+}
+
+input.search {
+    font-color:white;
+   
+}
+
+.rounded { 
+  border-radius:15px; 
+  -moz-border-radius:15px; 
+  -webkit-border-radius:15px; 
+}
+
+input[type=text]{
+height: 25px;
+width: 100px;
+margin: 0;
+padding: 0;
+font-size: 15px;
+border: 1px solid #CCCCCC;
+color: #000;
+}
+
+
+iframe {
+  margin-top: 100px;
+  margin-bottom: 0px;
+  margin-left: 100px;
+  margin-right:100px;
+
+  border-top: #c00 10px;
+  border-right: #c00 10px ;
+  border-left: #c00 100px ;
+  border-bottom: #c00 10px ;
+
+
+  width: 90%;
+  height:400%;
+
+}
+
+#header {
+    position:fixed;
+    margin-top: 0px;
+    margin-left: 0px;
+    color:white;
+    background: #16ABBA; 
+    width: 100%;
+}
+
+#menuon {
+   margin-left: 10px;
+   margin-right: 50px;
+}
+
+
+
+
+#toolbar {
+    position: fixed;
+    width: 100%;
+    height: 25px;
+    top: 0;
+    left: 0;
+    margin-top: 0px;
+    padding: 10px 100px; /* some styling, please note overall height of the object will be 35px due to 5px padding on top/bottom. */
+    background: #16ABBA; /* some styling */
+    border-bottom: 0px solid #333; /* some styling */
+}
+
+#sidebar{
+   font-size: 1%;
+   font-weight: 300;
+  background: #16ABBA;
+  color: #16ABBA;
+
+}
+
+#other{
+ margin-top:30px;
+ margin-left: 25px;
+}
+
+#options{
+   font-size: 150%;
+ margin-top:100px;
+ margin-left: 25px;
+
+}
+
+#pageframe {
+    width: 80%;
+    height: 600px;
+    top: 0;
+    left: 0;
+
+    margin-top: 100px;
+    margin-bottom: 0px;
+    margin-left: 100px;
+    margin-right:100px;
+
+
+    border-top: 10px solid #16ABBA;
+    border-right: 10px solid #16ABBA;
+    border-left: 10px solid #16ABBA;
+    border-bottom: 10px solid #16ABBA; /* some styling */
+
+}

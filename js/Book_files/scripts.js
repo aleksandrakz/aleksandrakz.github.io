@@ -9,9 +9,9 @@ $(document).ready(function()
 
 window.onload = function() {
     var jPM = $.jPanelMenu({
-	    menu: '#sidebar',
-	    trigger: '#menuon'
-	});
+    menu: '#custom-menu-selector',
+    trigger: '#menuon'
+});
     jPM.on();
  
 };
