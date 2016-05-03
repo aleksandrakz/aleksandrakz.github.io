@@ -80,11 +80,13 @@ font-size: 15px;
 border: 1px solid #CCCCCC;
 color: #000;
 }
-
+#rest{
+  overflow-x:hidden; 
+}
 
 iframe {
-  float:center;
- width: 80%;
+    float:center;
+    width: 80%;
     height: 600px;
     top: 0;
     left: 0;

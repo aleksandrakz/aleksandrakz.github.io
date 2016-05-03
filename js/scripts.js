@@ -2,10 +2,10 @@ $(document).ready(function(){
 	$("#pageframe1").hide();
 	$("#pageframe2").hide();
 
-    $("#home").click(function(){
+    $("#map").click(function(){
     	 $("#pageframe").animate({left: '500px'});
     	 $("#pageframe1").show();
-    	 $(pageframe).animate({
+    	 $("#pageframe").animate({
 	    	 width: "60%",
 		    opacity: 0.8,
 		    marginLeft: "-50%",
@@ -29,8 +29,10 @@ $(document).ready(function(){
 		  }, 1500 );
 		});
 
-     $("#map").click(function(){
+     $("#home").click(function(){
     	$("#pageframe1").hide();
+    	$("#pageframe2").hide();
+    	$("#pageframe").show();
     	$(pageframe).animate({
 	    	 width: "80%",
 		    opacity: 1.0,
@@ -39,6 +41,22 @@ $(document).ready(function(){
 		    borderWidth: "10px",
 		    "left": "-=200px"
 		  }, 1500 );
+    	$("#pageframe1").animate({
+    		float:"center",
+    		opacity: 1.0,
+    		"margin-top": "100px",
+		    "margin-bottom": "0px",
+		    "margin-left": "50px",
+		    "margin-right":"0px"
+		})
+		$("#pageframe2").animate({
+			float:"center",
+			opacity: 1.0,
+    		"margin-top": "100px",
+		    "margin-bottom": "0px",
+		    "margin-left": "50px",
+		    "margin-right":"0px"
+		})
     });
 });
 
