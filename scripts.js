@@ -5,7 +5,7 @@ function ()
 {
    $("#show").click(function(){
        $("#pageframe").hide();
-       $("#sidebar").show();
+       $("#sidebar").slideToggle("slow");
        alert("hello");
   });
 };

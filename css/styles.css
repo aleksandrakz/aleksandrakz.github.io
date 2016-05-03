@@ -4,7 +4,9 @@ h1 {
    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
    font-weight: 300;
 }
-
+body {
+  overflow-x: hidden;
+}
 
 #home {
   float: right;
@@ -16,9 +18,17 @@ h1 {
 }
 
 aside{
-   background: #16ABBA; 
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-   color:white;
+  background: #16ABBA; 
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  color:white;
+  z-index: 5;
+}
+#sidebar{
+  background: #16ABBA; 
+  font-size: 1%;
+  font-weight: 300;
+  color: #16ABBA;
+   z-index: 5;
 }
 
 button{
@@ -73,23 +83,27 @@ color: #000;
 
 
 iframe {
-  margin-top: 100px;
-  margin-bottom: 0px;
-  margin-left: 100px;
-  margin-right:100px;
+  float:center;
+ width: 80%;
+    height: 600px;
+    top: 0;
+    left: 0;
 
-  border-top: #c00 10px;
-  border-right: #c00 10px ;
-  border-left: #c00 100px ;
-  border-bottom: #c00 10px ;
+    margin-top: 100px;
+    margin-bottom: 0px;
+    margin-left: 50px;
+    margin-right:0px;
 
 
-  width: 90%;
-  height:400%;
-
+    border-top: 10px solid #16ABBA;
+    border-right: 10px solid #16ABBA;
+    border-left: 10px solid #16ABBA;
+    border-bottom: 10px solid #16ABBA; 
 }
 
-#header {
+
+
+header {
     position:fixed;
     margin-top: 0px;
     margin-left: 0px;
@@ -118,13 +132,7 @@ iframe {
     border-bottom: 0px solid #333; /* some styling */
 }
 
-#sidebar{
-   font-size: 1%;
-   font-weight: 300;
-  background: #16ABBA;
-  color: #16ABBA;
 
-}
 
 #other{
  margin-top:30px;
@@ -132,27 +140,21 @@ iframe {
 }
 
 #options{
-   font-size: 150%;
+font-size: 150%;
  margin-top:100px;
  margin-left: 25px;
-
+     background: #16ABBA; 
+  z-index: 5;
 }
 
 #pageframe {
-    width: 80%;
-    height: 600px;
-    top: 0;
-    left: 0;
+  z-index: -5;
+    /* some styling */
 
-    margin-top: 100px;
-    margin-bottom: 0px;
-    margin-left: 100px;
-    margin-right:100px;
+}
 
-
-    border-top: 10px solid #16ABBA;
-    border-right: 10px solid #16ABBA;
-    border-left: 10px solid #16ABBA;
-    border-bottom: 10px solid #16ABBA; /* some styling */
+#pageframe1 {
+  z-index: -5;
+    /* some styling */
 
 }
