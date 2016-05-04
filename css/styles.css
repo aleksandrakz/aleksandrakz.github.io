@@ -6,7 +6,18 @@ h1 {
 }
 body {
   overflow-x: hidden;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  font-weight: 300;
 }
+figure { 
+    display: inline-block;
+     width: 40%;
+    float: left;
+    margin: 5%;
+    text-align: center;
+    padding: 0;
+}
+
 #rest{
   position: fixed;
   left:0px;
@@ -117,10 +128,10 @@ iframe {
 
 div.frame {
   position:absolute;
+    background: white;
     width: 80%;
     height: 525px;
     top: 100px;
-    
     right:10%;
 
 
