@@ -3,11 +3,17 @@
 $(document).ready(function(){
 
 	var menu =0; 
+	var map=0; 
+	var one = true;
+	var two =false;
+	var three=false;
 
 	$("#pageframe1").hide();
 	$("#pageframe2").hide();
 	$("#back1").hide();
-	$("#back2").hide();	//$("#sidebar").hide();
+	$("#back2").hide();	
+	$("#mapframe").hide();//$("#sidebar").hide();
+	
 	$("#menuon").click(function(){
     	 //$("#pageframe").animate({left: '500px'});
     	 console.log("menu", menu);
@@ -117,7 +123,7 @@ $(document).ready(function(){
 		    "marginLeft": "10%",
 		    right:"10%",
 		  }, 1500 );
-		})
+		
 		$("#pageframe2").animate({
 				width: "80%",
 		    opacity: 1.0, 
@@ -125,6 +131,41 @@ $(document).ready(function(){
 		    "marginLeft": "10%",
 		    right:"10%",
 		  }, 1500 );
+	});
+
+
+    $("#map").click(function(){
+    	 //$("#pageframe").animate({left: '500px'});
+
+    	if (map ==0){
+    		one = $("#pageframe").is(":visible"); 
+	    	two = $("#pageframe1").is(":visible");
+	    	three = $("#pageframe2").is(":visible");
+    	    console.log("map ", one);
+    	    $("#pageframe").hide("slow");
+    	    $("#pageframe1").hide("slow");
+    	    $("#pageframe2").hide("slow");
+    	    $("#mapframe").show("slow");
+    	    map =1;
+		}
+		else {
+			console.log("hide map", one, two, three);
+			$("#mapframe").hide("slow");
+			if (one) {
+				console.log("showing one");
+				$("#pageframe").show("slow");
+			}
+			if (two) {
+				$("#pageframe1").show("slow");
+			}
+			if (three) {
+				$("#pageframe2").show("slow");
+			}
+			map =0;
+		}
+	});
+
+
 });
 
 
