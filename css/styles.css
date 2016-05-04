@@ -18,6 +18,7 @@ body {
 }
 
 aside{
+  position: relative;
   background: #16ABBA; 
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
   color:white;
@@ -85,7 +86,7 @@ color: #000;
 }
 
 iframe {
-    float:center;
+  float:center;
     width: 80%;
     height: 600px;
     top: 0;
@@ -101,6 +102,27 @@ iframe {
     border-right: 10px solid #16ABBA;
     border-left: 10px solid #16ABBA;
     border-bottom: 10px solid #16ABBA; 
+}
+
+div.frame {
+  float: center;
+  position:relative;
+    width: 80%;
+    height: 600px;
+    top: 0;
+    left: 0;
+
+    margin-top: 100px;
+    margin-bottom: 0px;
+    margin-left: 50px;
+    margin-right:0px;
+
+
+    border-top: 10px solid #16ABBA;
+    border-right: 10px solid #16ABBA;
+    border-left: 10px solid #16ABBA;
+    border-bottom: 10px solid #16ABBA; 
+    overflow-y:scroll;
 }
 
 

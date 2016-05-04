@@ -2,16 +2,23 @@ $(document).ready(function(){
 	$("#pageframe1").hide();
 	$("#pageframe2").hide();
 
-    $("#map").click(function(){
-    	 $("#pageframe").animate({left: '500px'});
+	    var myIFrame = document.getElementById('pageframe');
+         var myIFDoc  = myIFrame.contentWindow.document;
+         var button = myIFDoc.getElementsByName("first");
+
+    $(button).click(function(){
+    	// $("#pageframe").animate({left: '500px'});
+
+         $(button).hide();
+    	 $("#pageframe1").contents().find("#first").hide();
+    	 $("#pageframe1").animate({float:"center", "top":"-700px", "left":"100px"})
     	 $("#pageframe1").show();
     	 $("#pageframe").animate({
-	    	 width: "60%",
+	    	width: "60%",
 		    opacity: 0.8,
 		    marginLeft: "-50%",
-		    fontSize: "3em",
 		    borderWidth: "10px",
-		    "left": "-=200px"
+		    //"left": "-=200px"
 		  }, 1500 );
 		});
 
@@ -19,7 +26,7 @@ $(document).ready(function(){
     	 $("#pageframe1").animate({left: '500px'});
     	 $("#pageframe2").show();
     	 $("#pageframe").hide();
-    	 $(pageframe1).animate({
+    	 $("#pageframe1").animate({
 	    	 width: "60%",
 		    opacity: 0.8,
 		    marginLeft: "-50%",
