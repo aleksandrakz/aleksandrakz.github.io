@@ -13,7 +13,7 @@ $(document).ready(function(){
     	 console.log("menu", menu);
     	 if (menu ==0) {
 	    	 $("#rest").animate({
-			   left: "25%",
+			   left: "220px",
 			    width:"80%"
 			    //"left": "200px"
 			  }, 1500 );
