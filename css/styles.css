@@ -7,6 +7,14 @@ h1 {
 body {
   overflow-x: hidden;
 }
+#rest{
+  position: fixed;
+  left:0px;
+  height:100%;
+  width: 100%;
+  z-index: -1;
+}
+
 
 #home {
   float: right;
@@ -18,21 +26,22 @@ body {
 }
 
 aside{
-  position: absolute;
+  position:absolute;
   background: #16ABBA; 
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
   color:white;
-  z-index: 0;
 
+  left:-240px;
+  height:100%;
+  width:220px;
+  z-index: 5;
 }
 #sidebar{
-  position:absolute;
   background: #16ABBA; 
-  font-size: 1%;
+  font-size: 100%;
   font-weight: 300;
-  color: #16ABBA;
-   z-index: 0;
-   bottom: 0px;
+  color: white;
+  z-index: 5;
 }
 
 button{
@@ -111,7 +120,8 @@ div.frame {
     width: 80%;
     height: 525px;
     top: 100px;
-    left: 10%;
+    
+    right:10%;
 
 
     border-top: 10px solid #16ABBA;
@@ -125,7 +135,7 @@ button.back{
   position: absolute;
   right:0%;
   top:0px;
-  height:1200px;
+  height:400%;
   width:20px;
 }
 
@@ -136,6 +146,7 @@ header {
     color:white;
     background: #16ABBA; 
     width: 100%;
+    z-index: 10;
 }
 
 #menuon {
@@ -166,11 +177,12 @@ header {
 }
 
 #options{
+position: relative;
 font-size: 150%;
  margin-top:100px;
  margin-left: 25px;
-     background: #16ABBA; 
-  z-index: 5;
+ background: #16ABBA; 
+ z-index: 5;
 }
 
 #pageframe {

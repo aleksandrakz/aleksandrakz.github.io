@@ -1,17 +1,51 @@
+
+
 $(document).ready(function(){
+
+	var menu =0; 
+
 	$("#pageframe1").hide();
 	$("#pageframe2").hide();
 	$("#back1").hide();
+	$("#back2").hide();	//$("#sidebar").hide();
+	$("#menuon").click(function(){
+    	 //$("#pageframe").animate({left: '500px'});
+    	 console.log("menu", menu);
+    	 if (menu ==0) {
+	    	 $("#rest").animate({
+			   left: "25%",
+			    width:"80%"
+			    //"left": "200px"
+			  }, 1500 );
+	    	 $("#sidebar").animate({
+			    "left": "0px"
+			  }, 1500 ); 
+	    	menu= menu+1;
+	    }
+	    else {
+	    	$("#rest").animate({
+			   left:"0px",
+			    width:"100%"
+			    //"left": "200px"
+			  }, 1500 );
+	    	 $("#sidebar").animate({
+			    "left": "-250px"
+			  }, 1500 ); 
+	    	menu= menu-1;
+	    }
+
+	});
 
   	$("#click").click(function(){
     	 //$("#pageframe").animate({left: '500px'});
     	console.log("in");
     	 $("#pageframe").animate({
-	    	 width: "60%",
+	    	// width: "60%",
 		    opacity: 0.8,
-		    marginLeft: "-30%",
+		   // marginLeft: "-35%",
 		    borderWidth: "10px",
-		    "left": "-200px"
+		    //"left": "-52%",
+		    "right":"93%"
 		  }, 1500 );
     	  $("#pageframe1").show("slow");
     	  $("#back1").show();
@@ -21,13 +55,11 @@ $(document).ready(function(){
     	 //$("#pageframe").animate({left: '500px'});
     	console.log("out");
     	 $("#pageframe").animate({
-	    	position:"absolute",
-	    	width: "80%",
+	    	//width: "80%",
 		    opacity: 1.0, 
-    		//height: "600px",
 		    "top": "100px",
 		    "marginLeft": "10%",
-		    left:"0%",
+		    right:"10%",
 		  }, 1500 );
 
     	  $("#pageframe1").hide("slow");
@@ -37,12 +69,11 @@ $(document).ready(function(){
     	 //$("#pageframe").animate({left: '500px'});
     	 $("#pageframe1").animate({
 	    	position:"absolute",
-	    	width: "80%",
+	    	//width: "80%",
 		    opacity: 1.0, 
-    		height: "600px",
 		    "top": "100px",
-		    "marginLeft": "10%",
-		    left:"0%",
+		    //"marginLeft": "10%",
+		    right:"10%",
 		  }, 1500 );
 
     	  $("#pageframe2").hide("slow");
@@ -54,16 +85,18 @@ $(document).ready(function(){
     	 //$("#pageframe1").animate({left: '500px'});
     	 $("#pageframe2").show("slow");
     	 $("#pageframe").hide();
+    	 $("#back2").show();
     	 $("#pageframe1").animate({
-	    	width: "60%",
+	    	//width: "60%",
 		    opacity: 0.8,
-		    marginLeft: "-30%",
+		    //marginLeft: "-30%",
 		    borderWidth: "10px",
-		    "left": "-200px"
+		    "right": "92%"
 		  }, 1500 );
 		});
 
      $("#home").click(function(){
+     	console.log("home")
     	$("#pageframe1").hide();
     	$("#pageframe2").hide();
     	$("#back1").hide();
@@ -72,39 +105,29 @@ $(document).ready(function(){
     		position:"absolute",
 	    	width: "80%",
 		    opacity: 1.0, 
-    		//height: "600px",
 		    "top": "100px",
 		    "marginLeft": "10%",
-		    left:"0%",
+		    right:"10%",
 		  }, 1500 );
     	
     	$("#pageframe1").animate({
     		width: "80%",
 		    opacity: 1.0, 
-    		//height: "600px",
 		    "top": "100px",
 		    "marginLeft": "10%",
-		    left:"0%",
+		    right:"10%",
 		  }, 1500 );
 		})
 		$("#pageframe2").animate({
 				width: "80%",
 		    opacity: 1.0, 
-    		//height: "600px",
 		    "top": "100px",
 		    "marginLeft": "10%",
-		    left:"0%",
+		    right:"10%",
 		  }, 1500 );
 });
 
-/*window.onload = function() {
-    var jPM = $.jPanelMenu({
-	    menu: '#sidebar',
-	    trigger: '#menuon'
-	});
-    jPM.on();
- 
-};*/
+
 
 $( document ).keypress(function(event) {
   if ( event.which == 97 ) {
@@ -120,3 +143,11 @@ $( document ).keypress(function(event) {
     	}
 });
 
+/*window.onload = function() {
+    var jPM = $.jPanelMenu({
+	    menu: '#sidebar',
+	    trigger: '#menuon'
+	});
+    jPM.on();
+    };
+*/
