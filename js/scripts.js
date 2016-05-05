@@ -11,10 +11,9 @@ $(document).ready(function(){
 	$("#pageframe2").hide();
 	$("#back1").hide();
 	$("#back2").hide();	
-	$("#mapframe").hide();//$("#sidebar").hide();
+	$("#mapframe").hide();
 	$(".sidebutton").hide();
 
-	//$("#mapclick").popover(); 
 	$("#Edit").popover({
 		placement: 'left',
 		container:"body",
@@ -32,7 +31,6 @@ $(document).ready(function(){
 		container:"body",
 		trigger: 'hover'
 	});
-	//$("#myPopover").popover();
 
 	$(function() {
     	$(".mapfig").draggable({
@@ -40,13 +38,11 @@ $(document).ready(function(){
 	});
 
 	$("#menuon").click(function(){
-    	 //$("#pageframe").animate({left: '500px'});
     	 console.log("menu", menu);
     	 if (menu ==0) {
 	    	 $("#rest").animate({
 			   left: "220px",
 			    width:"80%"
-			    //"left": "200px"
 			  }, 1500 );
 	    	 $("#sidebar").animate({
 			    "left": "0px"
@@ -57,7 +53,6 @@ $(document).ready(function(){
 	    	$("#rest").animate({
 			   left:"0px",
 			    width:"100%"
-			    //"left": "200px"
 			  }, 1500 );
 	    	 $("#sidebar").animate({
 			    "left": "-250px"
@@ -68,14 +63,10 @@ $(document).ready(function(){
 	});
 
   	$("#click").click(function(){
-    	 //$("#pageframe").animate({left: '500px'});
     	console.log("in");
     	 $("#pageframe").animate({
-	    	// width: "60%",
 		    opacity: 0.8,
-		   // marginLeft: "-35%",
 		    borderWidth: "10px",
-		    //"left": "-52%",
 		    "right":"93%"
 		  }, 1500 );
     	  $("#pageframe1").show("slow");
@@ -83,10 +74,8 @@ $(document).ready(function(){
 		});
 
   	$("#back1").click(function(){
-    	 //$("#pageframe").animate({left: '500px'});
     	console.log("out");
     	 $("#pageframe").animate({
-	    	//width: "80%",
 		    opacity: 1.0, 
 		    "top": "100px",
 		    "marginLeft": "10%",
@@ -97,13 +86,10 @@ $(document).ready(function(){
     	  $("#back1").hide();
     	});
   	$("#back2").click(function(){
-    	 //$("#pageframe").animate({left: '500px'});
     	 $("#pageframe1").animate({
 	    	position:"absolute",
-	    	//width: "80%",
 		    opacity: 1.0, 
 		    "top": "100px",
-		    //"marginLeft": "10%",
 		    right:"10%",
 		  }, 1500 );
 
@@ -113,14 +99,11 @@ $(document).ready(function(){
     }); 
 
     $("#click2").click(function(){
-    	 //$("#pageframe1").animate({left: '500px'});
     	 $("#pageframe2").show("slow");
     	 $("#pageframe").hide();
     	 $("#back2").show();
     	 $("#pageframe1").animate({
-	    	//width: "60%",
 		    opacity: 0.8,
-		    //marginLeft: "-30%",
 		    borderWidth: "10px",
 		    "right": "92%"
 		  }, 1500 );
@@ -166,8 +149,6 @@ $(document).ready(function(){
 
 
     $("#map").click(function(){
-    	 //$("#pageframe").animate({left: '500px'});
-
     	if (map ==0){
     		one = $("#pageframe").is(":visible"); 
 	    	two = $("#pageframe1").is(":visible");
@@ -197,18 +178,5 @@ $(document).ready(function(){
 			map =0;
 		}
 	});
-
-
-
 });
 
-
-
-/*window.onload = function() {
-    var jPM = $.jPanelMenu({
-	    menu: '#sidebar',
-	    trigger: '#menuon'
-	});
-    jPM.on();
-    };
-*/
