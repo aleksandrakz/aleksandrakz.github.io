@@ -1,5 +1,6 @@
 /*this is the magic stuff*/
 
+
 h1 { 
    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
    font-weight: 300;
@@ -8,6 +9,7 @@ body {
   overflow-x: hidden;
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
   font-weight: 300;
+  background:#434D60;
 }
 figure { 
     display: inline-block;
@@ -19,6 +21,27 @@ figure {
 }
 .expandable {
   border:5px solid #164FBA;
+}
+.mapfig{
+  position: absolute;
+   width: 30%;
+}
+#cath{
+  top:100px;
+  left:100px;
+}
+#cant{
+  top:300px;
+  left:300px;
+}
+#wells{
+  top:300px;
+  left:100px;
+}
+#arch{
+  top:500px;
+  left:100px;
+  
 }
 
 #rest{
@@ -37,6 +60,13 @@ figure {
 #map {
   float: right;
   margin-right: 25px;
+}
+
+.sidebutton{
+  position:fixed;
+  right:7%;
+  top:150px;
+  width: 25px;
 }
 
 aside{
@@ -101,7 +131,6 @@ input.search {
 input[type=text]{
 height: 25px;
 width: 150px;
-
 padding: 10px;
 font-size: 15px;
 border: 1px solid #CCCCCC;
@@ -137,6 +166,7 @@ div.frame {
     top: 100px;
     right:10%;
 
+    padding:20px;
 
     border-top: 10px solid #16ABBA;
     border-right: 10px solid #16ABBA;

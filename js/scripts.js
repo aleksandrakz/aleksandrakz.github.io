@@ -1,5 +1,4 @@
 
-
 $(document).ready(function(){
 
 	var menu =0; 
@@ -13,7 +12,33 @@ $(document).ready(function(){
 	$("#back1").hide();
 	$("#back2").hide();	
 	$("#mapframe").hide();//$("#sidebar").hide();
-	
+	$(".sidebutton").hide();
+
+	//$("#mapclick").popover(); 
+	$("#Edit").popover({
+		placement: 'left',
+		container:"body",
+		trigger: 'hover',
+		trigger: 'click',
+	});
+	$("#Save").popover({
+		placement: 'bottom',
+		container:"body",
+		trigger: 'hover',
+		trigger: 'click'
+	});
+	$("#MapPop").popover({
+
+		container:"body",
+		trigger: 'hover'
+	});
+	//$("#myPopover").popover();
+
+	$(function() {
+    	$(".mapfig").draggable({
+		});
+	});
+
 	$("#menuon").click(function(){
     	 //$("#pageframe").animate({left: '500px'});
     	 console.log("menu", menu);
@@ -107,6 +132,12 @@ $(document).ready(function(){
     	$("#pageframe2").hide();
     	$("#back1").hide();
     	$("#pageframe").show();
+    	$("#mapframe").hide("slow");
+		$(".sidebutton").hide();
+		if (map==1) {
+			map=0;
+		}
+
     	$("#pageframe").animate({
     		position:"absolute",
 	    	width: "80%",
@@ -146,11 +177,13 @@ $(document).ready(function(){
     	    $("#pageframe1").hide("slow");
     	    $("#pageframe2").hide("slow");
     	    $("#mapframe").show("slow");
+    	    $(".sidebutton").show();
     	    map =1;
 		}
 		else {
 			console.log("hide map", one, two, three);
 			$("#mapframe").hide("slow");
+			$(".sidebutton").hide();
 			if (one) {
 				console.log("showing one");
 				$("#pageframe").show("slow");
@@ -166,23 +199,10 @@ $(document).ready(function(){
 	});
 
 
+
 });
 
 
-
-$( document ).keypress(function(event) {
-  if ( event.which == 97 ) {
-    	 $("#pageframe1").animate({float:"center", "top":"-700px", "left":"100px"})
-    	 $("#pageframe1").show();
-    	 $("#pageframe").animate({
-	    	width: "60%",
-		    opacity: 0.8,
-		    marginLeft: "-50%",
-		    borderWidth: "10px",
-		    //"left": "-=200px"
-		  }, 1500 );
-    	}
-});
 
 /*window.onload = function() {
     var jPM = $.jPanelMenu({

@@ -4,6 +4,11 @@
   		<title>Book</title>
   		<script src="js/jquery-1.11.3.min.js"></script>
   		<script src="js/jquery.jpanelmenu.js"></script>
+  		  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+		<script type="text/javascript" src="js/jquery.connectingLine.js"></script>
+		<script type="text/javascript" src="js/jquery-ui-1.10.4.custom.min.js"></script>
+
 
   		<link rel="stylesheet" type="text/css" href="css/book.css">
   		<link rel="stylesheet" type="text/css" href="css/styles.css">
@@ -112,20 +117,25 @@
 		</div> 
 
 		<div class="frame" id="mapframe"> 
-			<center> 
-				<h1> English Cathedrals Map </h1>
-				<img src="map_winchester.jpeg"  width="30%" > 
-			</center><br>
 			
+			<a class="btn" id="MapPop" rel="popover" data-content=" This is a map of the pages that were read while exploring a topic. Although this is not implemented now, clicking on any one of the page images brings you immediately to that page, and clicking the map button again brings you back to the page you just left. The map should be editable (click the edit button for more info)." type="image"> 
+	    		<td> <img src="map.jpg" width="100%"> </td> 
+	    	</a> 
 
-			<center>
-			<img src="map_canterbury.jpeg" width="25%" >
-			<img src="map_wells.jpeg" width="25%" ></center><br>
-			&#8595;
-			<br>
-			<img src="map_strainer.jpeg" width="25%" > 
+			 
+				
 		</div> 
 		
+		<div class="sidebutton"> 
+			<a class="btn" id="Edit" rel="popover" data-content="This map should be editable, although this is not implemented. Images of pages are automatically added when you open a page, linked to the page from which they were reached. Dotted lines signify an equal relationship (e.g. a book on English Cathedrals may link to another book on French Cathedrals because they are related) and solid lines signify that one page is extension of another. However, pages or connections can be removed or rearranged to follow the user's mental association map as closely as possible. " type="image"> 
+	    		<td> <img src="edit-icon.ico" width="50px">  </td> 
+	    	</a>  
+	    	<a class="btn" id="Save" rel="popover" data-content="Page maps can be saved to users' accounts to allow them to return to their exploration of a topic at any time." type="image"> 
+	    		<td> <img src="save-icon.ico" width="50px">  </td> 
+	    	</a> 
+
+	    </div>
+
 	</div>
 
 
