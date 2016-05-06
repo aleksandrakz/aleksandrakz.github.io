@@ -110,8 +110,7 @@ form{
   margin:0 auto;
 }
 .search { 
-  padding:6px 15px 6px 30px;
-  margin:10px; 
+  
   background: url('./images/search.png') no-repeat 8px 6px; 
   float:center;
   margin-left: 50px;
